@@ -5,6 +5,7 @@
 }
 
 /* body {
+  
   background-color: #eeeeea;
 } */
 
@@ -18,6 +19,10 @@ li a{
 li a:hover{
   /* text-decoration: none; */
   color: #223;
+}
+
+li a:active{
+  color: rgb(247, 239, 0);
 }
 
 #logo{
@@ -112,21 +117,84 @@ input:checked + label .description {
 
 
 .card[for="c1"] {
-  background-image: url('/styles/images/coffee-2319107_1280.jpg');
+  background-image: url('/styles/images/coffee-compress.jpg');
   background-position: center;
 }
 .card[for="c2"] {
-  background-image: url('/styles/images/3d-render-techno-background-with-flowing-network-lines-particles.jpg');
+  background-image: url('/styles/images/tech-compress.jpg');
   background-position: center;
 }
 .card[for="c3"] {
-  background-image: url('/styles/images/light-bulb-with-drawing-graph.jpg');
+  background-image: url('/styles/images/light-compress.jpg');
   background-position: center;
 }
 .card[for="c4"] {
-  background-image: url('/styles/images/front-view-stacked-books-graduation-cap-ladders-education-day.jpg');
+  background-image: url('/styles/images/echelle-compress.jpg');
   background-position: center;
 }
+
+/* *****presentation******** */
+#profil{
+  filter: blur(2px);
+}
+#profil:hover{
+  filter: none;
+}
+
+.text-parcours:hover{
+  background: rgba(200,123,0,0.3) ;
+  font-weight: 600;
+}
+.text-interets:hover{
+  background: rgba(103, 197, 228, 0.3) ;
+  font-weight: 600;
+}
+.text-qualites:hover{
+  background: rgba(120, 235, 183, 0.3) ;
+  font-weight: 600;
+}
+.text-langues:hover{
+  background: rgba(235, 120, 203, 0.3) ;
+  font-weight: 600;
+}
+
+.parcours{
+  background-color: rgb(246, 195, 102);
+}
+.parcours:hover{
+  background-color: rgb(245, 119, 73);
+  color:#fff;
+}
+.interets{
+  background-color: rgb(171, 225, 241);
+}
+.interets:hover{
+  background-color: rgb(144, 144, 233);
+  color: #fff;
+}
+.qualites{
+  background-color: rgb(157, 242, 213);
+}
+.qualites:hover{
+  background-color: rgb(0, 255, 195);
+  color: #fff;
+}
+.langues{
+  background-color: rgb(245, 145, 245);
+}
+.langues:hover{
+  background-color: rgb(189, 41, 189);
+  color: #fff;
+}
+
+/* *****technologies************** */
+
+.progress-hover:hover{
+  font-weight: bold;
+  /* color: #fff;
+  background-color: rgb(189, 216, 221); */
+}
+
 
 /* *******page expériences ****** */
 
@@ -147,6 +215,16 @@ input:checked + label .description {
   color: black;
 }
 
+.fondu{
+  animation: fondu 2s linear  ;
+}
+
+@keyframes fondu{
+  0%{opacity: 0;}
+  50%{opacity: 0.5;}
+  100%{opacity: 1;}
+}
+
 /* *******responsive menu burger********* */
 @media (max-width:1000px) {
 
@@ -155,3 +233,41 @@ input:checked + label .description {
   }
   
 } 
+
+/* **********diplomes keyframes********** */
+
+.hand{
+  max-width: 400px;
+  margin-top: -25px;
+  animation: hand 2s ease-in-out infinite alternate forwards;
+}
+
+@keyframes hand{
+  0%{transform: translateY(10%) scale(.8)}
+  50%{transform: translateY(5%) scale(.9)}
+  100%{transform: translateY(10%) scale(.8)}
+}
+
+
+.salut{
+  /* margin-top: 400px; */
+  /* background-color: #ffdada; */
+  /* width: 300px; */
+  padding: 10px;
+  animation: salut 3s ;
+}
+
+@keyframes salut{
+  0%{opacity: 0;}
+  50%{opacity: 0.5;}
+  100%{opacity: 1;}
+
+  from{
+    margin-left: 0%;
+    width: 0%;
+  }
+  to{
+    width: 100%;
+  }
+
+}
