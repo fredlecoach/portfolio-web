@@ -4,6 +4,19 @@
   padding: 0;
 }
 
+.fond-nav{
+  background-color: #000;
+}
+
+/* couleur menu deroulants home */
+h4 a{
+  color: #ffffff;
+}
+h4 a:hover{
+  color: rgb(0, 0, 0);
+  /* -webkit-text-stroke-color: rgb(215, 187, 116);; */
+  /* background: rgba(255, 255, 255, 0.3); */
+}
 /* body {
   
   background-color: #eeeeea;
@@ -18,15 +31,11 @@ li a{
 
 li a:hover{
   /* text-decoration: none; */
-  color: #223;
-}
-
-li a:active{
-  color: rgb(247, 239, 0);
+  color: rgb(215, 187, 116);
 }
 
 #logo{
-  max-width: 6em;
+  width: 6em;
 }
 
 .wrapper {
@@ -231,6 +240,10 @@ input:checked + label .description {
   li a{
     float: right;
   }
+
+  #logo{
+    width: 10em
+  }
   
 } 
 
@@ -254,7 +267,7 @@ input:checked + label .description {
   /* background-color: #ffdada; */
   /* width: 300px; */
   padding: 10px;
-  animation: salut 3s ;
+  animation: salut 3s  ;
 }
 
 @keyframes salut{
