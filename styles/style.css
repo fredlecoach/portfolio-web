@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+.gros-titre{
+  background-color: black;
+}
+
 .fond-nav{
   background-color: #000;
 }
@@ -204,6 +208,13 @@ input:checked + label .description {
   background-color: rgb(189, 216, 221); */
 }
 
+.langage-text a{
+  text-decoration: none;
+  color: #000;
+}
+.langage-text a:hover{
+font-weight: bold;
+}
 
 /* *******page expériences ****** */
 
