@@ -147,6 +147,13 @@ input:checked + label .description {
 }
 
 /* *****presentation******** */
+.presentation {
+ background-image: url("/styles/images/6272.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: contain;
+}
+
 #profil{
   filter: blur(2px);
 }
@@ -157,7 +164,10 @@ input:checked + label .description {
 .text-parcours:hover{
   background: rgba(200,123,0,0.3) ;
   font-weight: 600;
+  padding: 0 10px;
 }
+
+
 .text-interets:hover{
   background: rgba(103, 197, 228, 0.3) ;
   font-weight: 600;
@@ -177,6 +187,7 @@ input:checked + label .description {
 .parcours:hover{
   background-color: rgb(245, 119, 73);
   color:#fff;
+
 }
 .interets{
   background-color: rgb(171, 225, 241);
@@ -216,15 +227,21 @@ input:checked + label .description {
 font-weight: bold;
 }
 
+.back-tech{
+  background-image: url("/styles/images/3d-render-techno-background-with-flowing-network-lines-particles.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 /* *******page expériences ****** */
 
 .fond{
   background-image: url("/styles/images/07.jpg");
 }
-.fond-presentation{
-  background-image: url("/styles/images/6272.jpg");
-  /* background-position: center; */
-  background-repeat: no-repeat;
+
+.back-exp{
+  background-image: url("/styles/images/07.jpg");
 }
 
 .back{
@@ -243,6 +260,13 @@ font-weight: bold;
   0%{opacity: 0;}
   50%{opacity: 0.5;}
   100%{opacity: 1;}
+}
+
+@media (max-width:1000px){
+  .bouton a{
+    background-color: rgb(72, 145, 162);
+    color: #fff;
+  }
 }
 
 /* *******responsive menu burger********* */
@@ -294,4 +318,19 @@ font-weight: bold;
     width: 100%;
   }
 
+}
+
+@media (max-width: 1000px) {
+  .text-parcours:hover{
+    color: white;
+    background-color: rgba(107, 64, 21, 0.5);
+    padding: 0 10px;
+  }
+}
+@media (max-width: 1000px) {
+  .text-interets:hover{
+    color: white;
+    background-color: rgba(21, 68, 107, 0.5);
+    padding: 0 10px;
+  }
 }
