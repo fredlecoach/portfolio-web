@@ -48,7 +48,7 @@ li a:hover{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -20px;
+  margin-top: -70px;
 }
 
 .divider {
@@ -68,17 +68,21 @@ li a:hover{
   margin: 10px 10px;
   display: flex;
   align-items: flex-end;
-  transition: .6s cubic-bezier(.28,-0.03,0,.99);
+  transition: .6s cubic-bezier(.08, 0, 0, 1.5); 
+  /* propriété pour créer l'effet d'ouverture: 
+            -> 1ere valeur: vitesse d'ouverture
+            -> 2 ème valeur: agrandissement de l'image au clic sur l'axe X au point de départ
+            -> 4 ème valeur: la fin de l'agrandissemnt sur l'axe X au point d'arrivée */
   box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
 }
 
-.card > .row {
+.card .row {
   color: white;
   display: flex;
   flex-wrap: nowrap;
 }
 
-.card > .row > .icon {
+.card  .row  .icon {
   background: #223;
   color: white;
   border-radius: 50%;
@@ -89,7 +93,7 @@ li a:hover{
   margin: 15px;
 }
 
-.card > .row > .description {
+.card  .row  .description {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -98,8 +102,10 @@ li a:hover{
   width: 520px;
   opacity: 0;
   transform: translateY(30px);
-  transition-delay: .3s;
-  transition: all .3s ease;
+  /* point de départ de l'animation sur laxe Y */
+  /* transition-delay: .3s; */
+  transition: all 2s ease; 
+  /* effet de transition des titres */
 }
 
 .description p {
@@ -119,29 +125,31 @@ input {
   display: none;
 }
 
+/* définit la taille des onglets */
 input:checked + label {
   width: 600px;
 }
 
+/* garder apparent le texte */
 input:checked + label .description {
   opacity: 1 !important;
   transform: translateY(0) !important;
 }
 
 
-.card[for="c1"] {
+#presentation {
   background-image: url('/styles/images/coffee-compress.jpg');
   background-position: center;
 }
-.card[for="c2"] {
+#technologies {
   background-image: url('/styles/images/tech-compress.jpg');
   background-position: center;
 }
-.card[for="c3"] {
+#experiences {
   background-image: url('/styles/images/light-compress.jpg');
   background-position: center;
 }
-.card[for="c4"] {
+#diplomes {
   background-image: url('/styles/images/echelle-compress.jpg');
   background-position: center;
 }
@@ -274,6 +282,7 @@ font-weight: bold;
 
   li a{
     float: right;
+    color: #000
   }
 
   #logo{
