@@ -65,9 +65,10 @@ li a:hover{
   cursor: pointer;
   overflow: hidden;
   border-radius: 2rem;
-  margin: 10px 10px;
+  margin: 10px;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-end; 
+  /* sert à cacher les numéro qd onglet fermé */
   transition: .6s cubic-bezier(.08, 0, 0, 1.5); 
   /* propriété pour créer l'effet d'ouverture: 
             -> 1ere valeur: vitesse d'ouverture
@@ -163,10 +164,12 @@ input:checked + label .description {
 }
 
 #profil{
-  filter: blur(2px);
+  /* filter: blur(2px); */
+  opacity: 0.7;
 }
 #profil:hover{
-  filter: none;
+  /* filter: none; */
+  opacity: 1;
 }
 
 .text-parcours:hover{
